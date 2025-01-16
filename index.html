@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Simulation - Alignments</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar">
+    <!-- Branding Section -->
+    <div class="sidebar-branding">
+      <h1 class="sidebar-logo">KIA</h1>
+      <p class="sidebar-tagline">Movement that inspires</p>
+      <h2 class="sidebar-title">Service Advisor</h2>
+    </div>
+
+    <!-- Navigation Items -->
+    <nav class="sidebar-nav">
+      <ul>
+        <li>
+          <a href="#dashboard" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#personality-profile" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Personality Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#training-assessment-responses" class="nav-item">
+            <i class="fas fa-check-square"></i>
+            <span>Training Assessment Responses</span>
+          </a>
+        </li>
+        <li>
+          <a href="#video-assessment" class="nav-item">
+            <i class="fas fa-video"></i>
+            <span>Video Assessment</span>
+          </a>
+        </li>
+        <li>
+          <a href="#training-library" class="nav-item">
+            <i class="fas fa-folder"></i>
+            <span>Training Library</span>
+          </a>
+        </li>
+        <li>
+          <a href="#individual-video-tutorials" class="nav-item">
+            <i class="fas fa-film"></i>
+            <span>Individual Video Tutorials</span>
+          </a>
+        </li>
+        <li>
+          <a href="#reports" class="nav-item">
+            <i class="fas fa-chart-bar"></i>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#logout" class="nav-item">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Menu for small screens -->
+    <div class="hamburger" id="hamburger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </aside>
+  <!-- END SIDEBAR -->
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <div class="content-wrapper">
+    <!-- NEW KIA HEADER SECTION -->
+    <header class="kia-header">
+        <div class="kia-header-left">
+          <!-- Replace with your actual Kia logo file or a placeholder -->
+          <img 
+            src="kialogo.png" 
+            alt="KIA Logo" 
+            class="kia-logo"
+          />
+          <span class="kia-tagline">Movement that Inspires</span>
+        </div>
+        <div class="kia-header-right">
+          <span>TX155 - Southwest Kia Mesquite</span>
+        </div>
+      </header>
+      <!-- END NEW KIA HEADER SECTION -->
+
+    <!-- Page Header Section -->
+    <header class="page-header">
+      <h1>Virtual Simulation</h1>
+      <p>Topic - Alignments</p>
+      <!-- Top Right Elements -->
+      <div class="top-right">
+        <button class="daily-challenge-button">Daily Challenge</button>
+        <div class="profile-icon">
+          <span> Service Adviser 👤 </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+      <!-- a) Session Details (Left Section) -->
+      <section class="session-details">
+        <h3>Session Details</h3>
+        <p>
+          To begin the simulation, click start and respond to the virtual customer's question
+          or statement. The conversation will appear as text as the audio is heard. As you verbally respond,
+          your words will also be displayed in the transcript window.
+          When you are done click stop.
+
+          To successfully complete the simulation contunue the conversation until the virtual 
+          customer agress with your proposal or to move forward with the product or service.
+
+          <h4>Maximum simulation time is 120 seconds</h4>
+        </p>
+        <div class="session-controls">
+          <button class="start-button">Start</button>
+          <button class="stop-button">Stop</button>
+          <button class="return-button">Return</button>
+        </div>
+      </section>
+
+      <!-- b) Customer Profile (Middle Section) -->
+      <section class="customer-profile">
+        <div class="profile-card">
+          <img 
+            src="woman profile.jpg" 
+            alt="Customer Photo" 
+            class="customer-photo" 
+          />
+          <div class="profile-info">
+            <p><strong>Name:</strong> Deidra Johnson</p>
+            <p><strong>Occupation:</strong> Real Estae Agent</p>
+            <p><strong>Age:</strong> 40</p>
+            <p>
+              <strong>Personality:</strong> Organized successful business lady who places a premium on time. 
+              Views sitting in a waiting room as wasted time. Doesn't mind paying for convienience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- c) Transcript Window (Right Section) -->
+      <section class="transcript-window">
+        <div class="chat-container">
+          <!-- Example chat messages -->
+          <div class="message customer">
+            <p>Hello, I have a question about the process.</p>
+          </div>
+          <div class="message consultant">
+            <p>Sure, please let me know what you’d like to know.</p>
+          </div>
+          <!-- More messages will be appended here via JS as needed -->
+        </div>
+      </section>
+    </main>
+  </div>
+  <!-- END MAIN CONTENT WRAPPER -->
+
+  <!-- Scripts -->
+  <script src="scripts/script.js"></script>
+</body>
+</html>
